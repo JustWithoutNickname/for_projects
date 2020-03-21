@@ -1,0 +1,25 @@
+import turtle
+import math
+
+turtle.setup(640, 480)
+turtle.bgcolor("LightGoldenrod1")
+turtle.pensize(3)
+turtle.speed(4)
+turtle.pencolor("red")
+turtle.fillcolor('cyan')
+turtle.penup()
+turtle.back(200)
+turtle.pendown()
+for i in range(3):
+    turtle.forward(250)
+    turtle.left(120)
+turtle.begin_fill()
+turtle.left(45)
+turtle.forward(250 / math.sqrt(2))
+turtle.right(90)
+turtle.forward(250 / math.sqrt(2))
+turtle.end_fill()
+turtle.pencolor("green")
+turtle.right(90)
+turtle.circle(100)
+turtle.done()
