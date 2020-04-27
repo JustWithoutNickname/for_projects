@@ -57,7 +57,7 @@ def region_selection1(image,startX, startY, endX, endY, numberOfPhoto):
     cropped = image[startY : endY , startX : endX]
     cv2.imwrite("D:\\results\\picture" + str(numberOfPhoto) + "\\2.jpg", cropped)
 
-for i in range(90, 100):
+for i in range(100):
     args = {"labels": "C:\\Users\\User\\PycharmProjects\\PythonStading\\coco_labels.txt",
             "weights": "C:\\Users\\User\\PycharmProjects\\PythonStading\\mask_rcnn_coco.h5",
             "image": "D:\\imagesForProject\\" + str(i) + ".jpg"}
